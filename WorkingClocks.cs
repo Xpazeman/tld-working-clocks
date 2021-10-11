@@ -89,7 +89,7 @@ namespace WorkingClocks
                 }
             }
 
-            MelonLogger.Log(setupClocks + " clocks found.");
+            MelonLogger.Msg(setupClocks + " clocks found.");
         }
 
         internal static List<GameObject> GetRootObjects()

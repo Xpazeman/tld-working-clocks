@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System;
 using UnityEngine;
 
@@ -18,7 +18,7 @@ namespace WorkingClocks
     {
         public static void Postfix(GameManager __instance)
         {
-            if (!GameManager.m_IsPaused && !InterfaceManager.IsMainMenuActive())
+            if (!GameManager.m_IsPaused && !InterfaceManager.IsMainMenuEnabled())
                 WorkingClocks.UpdateClocks();
         }
     }

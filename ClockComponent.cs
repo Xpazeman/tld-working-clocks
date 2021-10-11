@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnhollowerBaseLib.Attributes;
 
 namespace WorkingClocks
 {
@@ -11,6 +12,7 @@ namespace WorkingClocks
 
         public ClockComponent(System.IntPtr intPtr) : base(intPtr) { }
 
+        [HideFromIl2Cpp]
         public void UpdateHands(float hourDeg, float minutesDeg)
         {
             //Move hands

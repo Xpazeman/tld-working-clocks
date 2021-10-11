@@ -6,7 +6,7 @@ using MelonLoader;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: MelonInfo(typeof(WorkingClocks.WorkingClocks), "WorkingClocks", "1.0", "Xpazeman")]
+[assembly: MelonInfo(typeof(WorkingClocks.WorkingClocks), "WorkingClocks", "1.1", "Xpazeman")]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
 [assembly: AssemblyTitle("WorkingClocks")]
 [assembly: AssemblyDescription("")]
@@ -35,5 +35,5 @@ using MelonLoader;
 // Puede especificar todos los valores o usar los números de compilación y de revisión predeterminados
 // mediante el carácter "*", como se muestra a continuación:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
