@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-using UnhollowerBaseLib.Attributes;
+using Il2CppInterop.Runtime.Attributes;
 
 namespace WorkingClocks
 {
     class ClockComponent : MonoBehaviour
     {
-        public GameObject hourHand;
-        public GameObject minuteHand;
+        public GameObject? hourHand;
+        public GameObject? minuteHand;
 
         public ClockComponent() { }
 

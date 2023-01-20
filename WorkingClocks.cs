@@ -4,11 +4,13 @@ using System.IO;
 using System.Text.RegularExpressions;
 
 using Harmony;
+using Il2Cpp;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 using MelonLoader;
 using MelonLoader.TinyJSON;
+using Il2CppInterop.Runtime.Injection;
 
 namespace WorkingClocks
 {
@@ -17,9 +19,9 @@ namespace WorkingClocks
 
         public static List<ClockComponent> clockList = new List<ClockComponent>();
 
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
-            UnhollowerRuntimeLib.ClassInjector.RegisterTypeInIl2Cpp<ClockComponent>();
+            ClassInjector.RegisterTypeInIl2Cpp<ClockComponent>();
         }
 
         internal static ClockComponent PrepareClock(GameObject clockObj)
